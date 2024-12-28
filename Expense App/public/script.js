@@ -37,7 +37,7 @@ expenseForm.addEventListener('submit', async (e) => {
   try {
     await axios.post(API_URL, { title, amount, description, category });
     fetchExpenses();
-    expenseForm.reset(); // Clear form fields
+    expenseForm.reset(); 
   } catch (error) {
     console.error('Error adding expense:', error);
   }
